@@ -81,4 +81,10 @@ export default {
 .el-dropdown-menu__item {
   text-align: center;
 }
+.el-dropdown {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 14px;
+}
 </style>
