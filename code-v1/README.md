@@ -75,10 +75,10 @@
   - backstepmod.vue:      UI复用步骤修改icon展示以及功能文字展示
   - envManagement.vue:    UI环境管理icon展示以及功能文字展示
   - groupManagement.vue:  UI分组管理icon展示以及功能文字展示
-  - help.vue:   					UI帮助文档icon展示以及功能文字展示
+  - help.vue:   	  UI帮助文档icon展示以及功能文字展示
   - home.vue:             首页背景展示
-  - Login.vue:  					登录页面icon展示以及功能文字展示
-  - menu.vue:   					左侧icon展示以及功能文字展示
+  - Login.vue:  	  登录页面icon展示以及功能文字展示
+  - menu.vue:   	  左侧icon展示以及功能文字展示
 ⭐️ App.vue:	
 ⭐️ main.js:
 ⭐️ static: 
