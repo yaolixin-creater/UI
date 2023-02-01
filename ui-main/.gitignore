@@ -1,0 +1,8 @@
+*.vscode
+*.history
+*.pytest_cache
+cs.json
+cs.py
+.idea
+*.log
+autoTestPlatform/apps/ctc_backend_manage/__pycache__
