@@ -99,7 +99,6 @@
             :loading="loadingValue"
             size="mini"
           >重置</el-button>
-        </el-form-item>
         <el-button
             type="info"
             @click="buttonToggleSelect()"
@@ -127,6 +126,8 @@
               :disabled="clickAble"
               :loading="loadingValue"
           >刷新用例</el-button>
+          </el-form-item>
+
       </el-form>
       <template>
         <div v-if="showProgressBar">
@@ -319,9 +320,9 @@
             >刷新用例</el-button>
           </el-form-item> -->
           <br />
-          <el-form-item
+          <!-- <el-form-item
             v-for="(newcase, index) in searchCaseForm.newcases"
-            :label="'用例: ' + (index+1)"
+            :label="'用例: '"
             :key="newcase.key"
             :prop="'newcases.' + (index) + '.searchCasename'"
             :rules="{
@@ -355,7 +356,7 @@
                 ></el-button>
               </el-tooltip>
             </span>
-          </el-form-item>
+          </el-form-item> -->
         </el-form>
       </template>
       <br />
@@ -968,4 +969,10 @@ export default {
 .col-report {
   background-color: rgba(2, 17, 3, 0.788);
 }
+.el-button--info.is-plain {
+    color: #67C23A;
+    background: #f0f9eb;
+    border-color: #d3d4d6;
+}
+
 </style>
