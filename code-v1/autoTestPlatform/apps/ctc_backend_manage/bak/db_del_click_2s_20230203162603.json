@@ -1,0 +1,1076 @@
+[
+{
+  "model": "user.register",
+  "pk": 7,
+  "fields": {
+    "uuid": "12fa4349-8c78-23bc-bd19-beeb2354bcc7",
+    "username": "admin",
+    "password": "Jdh20010808",
+    "gender": "",
+    "email": "2068188757@qq.com",
+    "cellphone": 18109181778,
+    "fronted_email_code": "B8Mcn7",
+    "description": "",
+    "create_time": "2023-02-01 17:42:08",
+    "update_time": "2023-02-01 17:42:08"
+  }
+},
+{
+  "model": "ctc_backend_manage.case",
+  "pk": 1,
+  "fields": {
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "case_seq": "ignore",
+    "case_type": "\u524d\u7f6e",
+    "case_env": "DSP\u6f14\u793a\u73af\u5883",
+    "remark": null,
+    "create_time": "2023-01-11 13:57:02",
+    "update_time": "2023-02-03 15:54:21"
+  }
+},
+{
+  "model": "ctc_backend_manage.case",
+  "pk": 2,
+  "fields": {
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "case_seq": null,
+    "case_type": "DSP_\u540e\u7aef\u7ba1\u7406_\u8d26\u53f7\u4e0e\u7ba1\u7406",
+    "case_env": "general",
+    "remark": null,
+    "create_time": "2023-01-11 14:15:17",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.case",
+  "pk": 3,
+  "fields": {
+    "case_name": "\u767b\u5f55\u767e\u5ea6",
+    "case_func": "login_baidu",
+    "case_seq": "ignore",
+    "case_type": "\u524d\u7f6e",
+    "case_env": "\u767e\u5ea6",
+    "remark": null,
+    "create_time": "2023-02-03 16:09:09",
+    "update_time": "2023-02-03 16:12:17"
+  }
+},
+{
+  "model": "ctc_backend_manage.case",
+  "pk": 4,
+  "fields": {
+    "case_name": "\u70b9\u51fb\u641c\u7d22\u6846",
+    "case_func": "click",
+    "case_seq": null,
+    "case_type": "\u4f7f\u7528\u767e\u5ea6\u641c\u7d22\u5185\u5bb9",
+    "case_env": "\u767e\u5ea6",
+    "remark": null,
+    "create_time": "2023-02-03 16:15:38",
+    "update_time": "2023-02-03 16:21:33"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 1,
+  "fields": {
+    "step_seq_case_func": "1_login_dsp_demo",
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "step_seq": 1,
+    "action_desc": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "ele_action": "get_url",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "http://10.29.12.224:38967/#/login",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": "\u6d4f\u89c8\u5668\u5185\u8f93\u5165\u767b\u5f55\u5730\u5740",
+    "create_time": "2023-01-11 13:57:02",
+    "update_time": "2023-02-03 15:54:21"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 2,
+  "fields": {
+    "step_seq_case_func": "2_login_dsp_demo",
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "step_seq": 2,
+    "action_desc": "\u8f93\u5165\u7528\u6237\u540d",
+    "ele_action": "input",
+    "loc_type": "xpath",
+    "loc_value": "//input[@type='text']",
+    "action_value": "admin",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": "\u8f93\u5165\u7528\u6237\u540d",
+    "create_time": "2023-01-11 13:59:19",
+    "update_time": "2023-01-11 13:59:54"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 3,
+  "fields": {
+    "step_seq_case_func": "3_login_dsp_demo",
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "step_seq": 3,
+    "action_desc": "\u8f93\u5165\u5bc6\u7801",
+    "ele_action": "input",
+    "loc_type": "xpath",
+    "loc_value": "//input[@type='password']",
+    "action_value": "admin",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": "\u8f93\u5165\u5bc6\u7801",
+    "create_time": "2023-01-11 13:59:44",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 4,
+  "fields": {
+    "step_seq_case_func": "4_login_dsp_demo",
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "step_seq": 4,
+    "action_desc": "\u70b9\u51fb\u767b\u5f55",
+    "ele_action": "click",
+    "loc_type": "xpath",
+    "loc_value": "//button[@type='button']",
+    "action_value": null,
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": "\u70b9\u51fb\u767b\u5f55\u6309\u94ae",
+    "create_time": "2023-01-11 14:00:38",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 5,
+  "fields": {
+    "step_seq_case_func": "5_login_dsp_demo",
+    "case_name": "\u767b\u5f55DSP\u6f14\u793a\u73af\u5883",
+    "case_func": "login_dsp_demo",
+    "step_seq": 5,
+    "action_desc": "\u767b\u5f555s",
+    "ele_action": "compulsively_wait",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "5",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": "\u5ef6\u8fdf\u767b\u5f555s",
+    "create_time": "2023-01-11 14:01:54",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 6,
+  "fields": {
+    "step_seq_case_func": "1_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 1,
+    "action_desc": "\u5237\u65b0\u8fdb\u5165\u540e\u7aef\u7ba1\u7406\u89c6\u56fe",
+    "ele_action": "refresh_get_url",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "http://{host}/#/manage/dashboard",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:15:17",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 7,
+  "fields": {
+    "step_seq_case_func": "2_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 2,
+    "action_desc": "\u70b9\u51fb\u8d26\u53f7\u4e0e\u7ba1\u7406_\u6743\u9650\u89d2\u8272",
+    "ele_action": "click",
+    "loc_type": "xpath",
+    "loc_value": "//span[contains(text(),'\u6743\u9650\u89d2\u8272')]",
+    "action_value": null,
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:16:03",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 8,
+  "fields": {
+    "step_seq_case_func": "3_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 3,
+    "action_desc": "\u65ad\u8a00\u8fdb\u5165\u8d26\u53f7\u4e0e\u7ba1\u7406-\u6743\u9650\u89d2\u8272\uff0c\u9009\u4e2d\u5e73\u53f0\u89d2\u8272",
+    "ele_action": "assert_find_text",
+    "loc_type": "xpath",
+    "loc_value": "(//li[@class='dao-tab-nav-item router-link-exact-active active'])[1]",
+    "action_value": null,
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:16:37",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 9,
+  "fields": {
+    "step_seq_case_func": "4_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 4,
+    "action_desc": "\u7b49\u5f85\u52a0\u8f7d\u5b8c\u6210",
+    "ele_action": "compulsively_wait",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "2",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:17:23",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 10,
+  "fields": {
+    "step_seq_case_func": "5_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 5,
+    "action_desc": "\u70b9\u51fb\u521b\u5efa\u89d2\u8272\u6309\u94ae",
+    "ele_action": "click",
+    "loc_type": "xpath",
+    "loc_value": "//span[contains(text(),'\u521b\u5efa\u89d2\u8272')]",
+    "action_value": null,
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:17:51",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 11,
+  "fields": {
+    "step_seq_case_func": "6_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 6,
+    "action_desc": "\u70b9\u51fb\u8f93\u5165\u89d2\u8272",
+    "ele_action": "input",
+    "loc_type": "name",
+    "loc_value": "name",
+    "action_value": "test-auto",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:18:52",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 12,
+  "fields": {
+    "step_seq_case_func": "7_create_del_platform_permissions",
+    "case_name": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "case_func": "create_del_platform_permissions",
+    "step_seq": 7,
+    "action_desc": "\u70b9\u51fb\u8f93\u5165\u89d2\u8272\u63cf\u8ff0",
+    "ele_action": "input",
+    "loc_type": "name",
+    "loc_value": "description",
+    "action_value": "UI\u81ea\u52a8\u5316\u9a8c\u8bc1",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-01-11 14:19:44",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 13,
+  "fields": {
+    "step_seq_case_func": "1_login_baidu",
+    "case_name": "\u767b\u5f55\u767e\u5ea6",
+    "case_func": "login_baidu",
+    "step_seq": 1,
+    "action_desc": "\u8fdb\u5165baidu",
+    "ele_action": "get_url",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "https://www.baidu.com/",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-02-03 16:09:09",
+    "update_time": "2023-02-03 16:12:17"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 14,
+  "fields": {
+    "step_seq_case_func": "1_click",
+    "case_name": "\u70b9\u51fb\u641c\u7d22\u6846",
+    "case_func": "click",
+    "step_seq": 1,
+    "action_desc": "\u91cd\u65b0\u5237\u65b0\u767e\u5ea6\u9875\u9762",
+    "ele_action": "refresh_get_url",
+    "loc_type": null,
+    "loc_value": null,
+    "action_value": "https://{host}/",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-02-03 16:20:49",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 15,
+  "fields": {
+    "step_seq_case_func": "2_click",
+    "case_name": "\u70b9\u51fb\u641c\u7d22\u6846",
+    "case_func": "click",
+    "step_seq": 2,
+    "action_desc": "\u70b9\u51fb\u641c\u7d22\u6846",
+    "ele_action": "click",
+    "loc_type": "id",
+    "loc_value": "kw",
+    "action_value": null,
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-02-03 16:15:38",
+    "update_time": "2023-02-03 16:21:33"
+  }
+},
+{
+  "model": "ctc_backend_manage.step",
+  "pk": 16,
+  "fields": {
+    "step_seq_case_func": "3_click",
+    "case_name": "\u901a\u8fc7\u767e\u5ea6\u641c\u7d22\u5185\u5bb9",
+    "case_func": "click",
+    "step_seq": 3,
+    "action_desc": "\u8f93\u5165\u5185\u5bb9",
+    "ele_action": "input",
+    "loc_type": "id",
+    "loc_value": "kw",
+    "action_value": "\u7f8e\u5973\u56fe\u7247",
+    "argvs": "{}",
+    "assert_value": null,
+    "remark": null,
+    "create_time": "2023-02-03 16:16:36",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "0eba6e024f58ffb6",
+  "fields": {
+    "name": "test_report_0eba6e024f58ffb6.html",
+    "url": "/backendManage/getReport/test_report_0eba6e024f58ffb6.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:10:43",
+    "update_time": "2023-01-16 16:08:04"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "175b7bb0390a9d2d",
+  "fields": {
+    "name": "test_report_175b7bb0390a9d2d.html",
+    "url": "/backendManage/getReport/test_report_175b7bb0390a9d2d.html",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "host": "10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-02-03 15:49:31",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "1ba5131d6e3ba2fd",
+  "fields": {
+    "name": "test_report_1ba5131d6e3ba2fd.html",
+    "url": "/backendManage/getReport/test_report_1ba5131d6e3ba2fd.html",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "host": "10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-02-03 15:54:57",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "1e6fbe643d6e277d",
+  "fields": {
+    "name": "test_report_1e6fbe643d6e277d.html",
+    "url": "/backendManage/getReport/test_report_1e6fbe643d6e277d.html",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "host": "10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-02-02 09:52:56",
+    "update_time": "2023-02-01 21:45:31"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "212e160d4b387309",
+  "fields": {
+    "name": "test_report_212e160d4b387309.html",
+    "url": "/backendManage/getReport/test_report_212e160d4b387309.html",
+    "env": "\u767e\u5ea6",
+    "host": "www.baidu.com",
+    "casename": "['click']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-02-03 16:22:32",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "28036e8be67e81ef",
+  "fields": {
+    "name": "test_report_28036e8be67e81ef.html",
+    "url": "/backendManage/getReport/test_report_28036e8be67e81ef.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:09:04",
+    "update_time": "2023-01-16 16:08:04"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "51cb2d3442aaef8b",
+  "fields": {
+    "name": "test_report_51cb2d3442aaef8b.html",
+    "url": "/backendManage/getReport/test_report_51cb2d3442aaef8b.html",
+    "env": "\u767e\u5ea6",
+    "host": "www.baidu.com",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-02-03 16:16:50",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "536dc8662d0b19f8",
+  "fields": {
+    "name": "test_report_536dc8662d0b19f8.html",
+    "url": "/backendManage/getReport/test_report_536dc8662d0b19f8.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": null,
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-11 14:45:44",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "88656d229c3d4a2e",
+  "fields": {
+    "name": "test_report_88656d229c3d4a2e.html",
+    "url": "/backendManage/getReport/test_report_88656d229c3d4a2e.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-11 14:32:10",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "9c6a99b71d15823c",
+  "fields": {
+    "name": "test_report_9c6a99b71d15823c.html",
+    "url": "/backendManage/getReport/test_report_9c6a99b71d15823c.html",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "host": "10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:14:33",
+    "update_time": "2023-01-16 16:08:04"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "b2478953ad75931e",
+  "fields": {
+    "name": "test_report_b2478953ad75931e.html",
+    "url": "/backendManage/getReport/test_report_b2478953ad75931e.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:04:57",
+    "update_time": "2023-01-16 16:04:18"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "d19f4a03838aebc7",
+  "fields": {
+    "name": "test_report_d19f4a03838aebc7.html",
+    "url": "/backendManage/getReport/test_report_d19f4a03838aebc7.html",
+    "env": "DSP-DEMO",
+    "host": "http://10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:11:25",
+    "update_time": "2023-01-16 16:08:04"
+  }
+},
+{
+  "model": "ctc_backend_manage.reporter",
+  "pk": "eee878fdf980ffb1",
+  "fields": {
+    "name": "test_report_eee878fdf980ffb1.html",
+    "url": "/backendManage/getReport/test_report_eee878fdf980ffb1.html",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "host": "10.29.12.224:38967",
+    "casename": "['create_del_platform_permissions']",
+    "corenum": null,
+    "err_msg": null,
+    "remark": null,
+    "desc": "SUCCESS",
+    "create_time": "2023-01-16 16:13:06",
+    "update_time": "2023-01-16 16:08:04"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 25,
+  "fields": {
+    "report_id": "fd3bbe4619f46618",
+    "env": "production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u6536\u4ef6",
+    "method": "watch_email_revice",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "NRCC",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-21 12:34:48",
+    "update_time": "2021-12-21 12:32:57"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 33,
+  "fields": {
+    "report_id": "515d3ecfdf321cf7",
+    "env": "production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4e2a\u4eba\u4e3b\u9875",
+    "method": "watch_personal_homepage",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-23 09:58:46",
+    "update_time": "2021-12-23 09:57:36"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 37,
+  "fields": {
+    "report_id": "0658d078d7a69ad0",
+    "env": "production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4e2a\u4eba\u4e3b\u9875",
+    "method": "watch_personal_homepage",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(8)\u65ad\u8a00\u53d1\u8d77\u83b7\u53d62019\u5e74\u6837\u672c\u7684\u63a5\u53e3\u3011\u5931\u8d25...; \u626b\u63cf\u63a5\u53e3\u8bf7\u6c42\u8d85\u65f6\uff01\u6d4f\u89c8\u5668\u63a7\u5236\u53f0\u4fe1\u606f\u4e2d\u672a\u53d1\u73b0\u63a5\u53e3\u3010contribution_calendar?year=2019\u3011\u7684\u8bf7\u6c42\u8bb0\u5f55",
+    "result": false,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-24 02:13:12",
+    "update_time": "2021-12-24 02:11:52"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 93,
+  "fields": {
+    "report_id": "702605f525c27bb5",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(2)\u70b9\u51fb\u8fdb\u5165Pull Requests\u3011\u5931\u8d25...; \u8d85\u65f6\uff08\u539f\u56e0\u4e00\uff1a\u5143\u7d20\u5b9a\u4f4d\u503c\u9519\u8bef\uff0c\u539f\u56e0\u4e8c\uff1a\u9875\u9762\u672a\u6253\u5f00\uff09",
+    "result": false,
+    "TransactionID": "NRCC",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-27 08:38:21",
+    "update_time": "2021-12-27 08:37:41"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 94,
+  "fields": {
+    "report_id": "c017cf72f8bb7c6b",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-27 09:08:12",
+    "update_time": "2021-12-27 09:07:56"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 95,
+  "fields": {
+    "report_id": "4452f7af953bde47",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-27 09:15:56",
+    "update_time": "2021-12-27 09:15:20"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 96,
+  "fields": {
+    "report_id": "945b3294b49c71e6",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2021-12-27 09:17:46",
+    "update_time": "2021-12-27 09:17:02"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 180,
+  "fields": {
+    "report_id": "4d8b2fe90025b2b9",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4e2a\u4eba\u4e3b\u9875",
+    "method": "watch_personal_homepage",
+    "case_tested": 1,
+    "err_msg": "\u7528\u4f8b\u65ad\u8a00\u5931\u8d25",
+    "result": false,
+    "TransactionID": "\u9884\u671f\u503c20199\u548c\u67e5\u8be2\u5230\u7684\u7ed3\u679c2019\u4e0d\u4e00\u81f4\uff01",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2022-01-04 17:19:06",
+    "update_time": "2022-01-04 17:18:43"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 181,
+  "fields": {
+    "report_id": "4d8b2fe90025b2b9",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4ed3\u5e93",
+    "method": "watch_warehouse",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2022-01-04 17:19:09",
+    "update_time": "2022-01-04 17:18:43"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 182,
+  "fields": {
+    "report_id": "72122d50fd988289",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4e2a\u4eba\u4e3b\u9875",
+    "method": "watch_personal_homepage",
+    "case_tested": 1,
+    "err_msg": "\u7528\u4f8b\u65ad\u8a00\u5931\u8d25",
+    "result": false,
+    "TransactionID": "\u9884\u671f\u503c20199\u548c\u67e5\u8be2\u5230\u7684\u7ed3\u679c2019\u4e0d\u4e00\u81f4\uff01",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2022-01-04 17:21:36",
+    "update_time": "2022-01-04 17:21:13"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 183,
+  "fields": {
+    "report_id": "72122d50fd988289",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4ed3\u5e93",
+    "method": "watch_warehouse",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2022-01-04 17:21:48",
+    "update_time": "2022-01-04 17:21:13"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 184,
+  "fields": {
+    "report_id": "72122d50fd988289",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2022-01-04 17:21:52",
+    "update_time": "2022-01-04 17:21:13"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 185,
+  "fields": {
+    "report_id": "c70db46dabe4836e",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4e2a\u4eba\u4e3b\u9875",
+    "method": "watch_personal_homepage",
+    "case_tested": 1,
+    "err_msg": "\u7528\u4f8b\u65ad\u8a00\u5931\u8d25",
+    "result": false,
+    "TransactionID": "\u9884\u671f\u503c20199\u548c\u67e5\u8be2\u5230\u7684\u7ed3\u679c2019\u4e0d\u4e00\u81f4\uff01",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2022-01-04 17:23:22",
+    "update_time": "2022-01-04 17:22:59"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 186,
+  "fields": {
+    "report_id": "c70db46dabe4836e",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770b\u4ed3\u5e93",
+    "method": "watch_warehouse",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2022-01-04 17:23:34",
+    "update_time": "2022-01-04 17:22:59"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 187,
+  "fields": {
+    "report_id": "c70db46dabe4836e",
+    "env": "gitee_production",
+    "filename": "None",
+    "casename": "\u67e5\u770bpull_requests",
+    "method": "watch_pull_requests",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2022-01-04 17:23:38",
+    "update_time": "2022-01-04 17:22:59"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 188,
+  "fields": {
+    "report_id": "eee878fdf980ffb1",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "filename": "None",
+    "casename": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "method": "create_del_platform_permissions",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(2)\u70b9\u51fb\u8d26\u53f7\u4e0e\u7ba1\u7406_\u6743\u9650\u89d2\u8272\u3011\u5931\u8d25...; \u8d85\u65f6\uff08\u539f\u56e0\u4e00\uff1a\u5143\u7d20\u5b9a\u4f4d\u503c\u9519\u8bef\uff0c\u539f\u56e0\u4e8c\uff1a\u9875\u9762\u672a\u6253\u5f00\uff09",
+    "result": false,
+    "TransactionID": "NRCC",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2023-01-16 16:13:42",
+    "update_time": "2023-01-16 16:13:07"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 189,
+  "fields": {
+    "report_id": "9c6a99b71d15823c",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "filename": "None",
+    "casename": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "method": "create_del_platform_permissions",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(3)\u65ad\u8a00\u8fdb\u5165\u8d26\u53f7\u4e0e\u7ba1\u7406-\u6743\u9650\u89d2\u8272\uff0c\u9009\u4e2d\u5e73\u53f0\u89d2\u8272\u3011\u5931\u8d25...; \u8d85\u65f6\uff08\u539f\u56e0\u4e00\uff1a\u5143\u7d20\u5b9a\u4f4d\u503c\u9519\u8bef\uff0c\u539f\u56e0\u4e8c\uff1a\u9875\u9762\u672a\u6253\u5f00\uff09",
+    "result": false,
+    "TransactionID": "NRCC",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2023-01-16 16:15:16",
+    "update_time": "2023-01-16 16:14:35"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 190,
+  "fields": {
+    "report_id": "1ba5131d6e3ba2fd",
+    "env": "DSP\u6f14\u793a\u73af\u5883",
+    "filename": "None",
+    "casename": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "method": "create_del_platform_permissions",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(2)\u70b9\u51fb\u8d26\u53f7\u4e0e\u7ba1\u7406_\u6743\u9650\u89d2\u8272\u3011\u5931\u8d25...; \u8d85\u65f6\uff08\u539f\u56e0\u4e00\uff1a\u5143\u7d20\u5b9a\u4f4d\u503c\u9519\u8bef\uff0c\u539f\u56e0\u4e8c\uff1a\u9875\u9762\u672a\u6253\u5f00\uff09",
+    "result": false,
+    "TransactionID": "NRCC",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2023-02-03 15:55:46",
+    "update_time": "2023-02-03 15:54:59"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 191,
+  "fields": {
+    "report_id": "51cb2d3442aaef8b",
+    "env": "\u767e\u5ea6",
+    "filename": "None",
+    "casename": "\u5e73\u53f0\u6743\u9650\u89d2\u8272\u7684\u521b\u5efa\u548c\u5220\u9664",
+    "method": "create_del_platform_permissions",
+    "case_tested": 1,
+    "err_msg": "\u6267\u884c\u6b65\u9aa4\u3010(2)\u70b9\u51fb\u8d26\u53f7\u4e0e\u7ba1\u7406_\u6743\u9650\u89d2\u8272\u3011\u5931\u8d25...; \u8d85\u65f6\uff08\u539f\u56e0\u4e00\uff1a\u5143\u7d20\u5b9a\u4f4d\u503c\u9519\u8bef\uff0c\u539f\u56e0\u4e8c\uff1a\u9875\u9762\u672a\u6253\u5f00\uff09",
+    "result": false,
+    "TransactionID": "NRCC",
+    "desc": "\u5931\u8d25",
+    "remark": "None",
+    "create_time": "2023-02-03 16:17:17",
+    "update_time": "2023-02-03 16:16:51"
+  }
+},
+{
+  "model": "ctc_backend_manage.item",
+  "pk": 192,
+  "fields": {
+    "report_id": "212e160d4b387309",
+    "env": "\u767e\u5ea6",
+    "filename": "None",
+    "casename": "\u70b9\u51fb\u641c\u7d22\u6846",
+    "method": "click",
+    "case_tested": 1,
+    "err_msg": "None",
+    "result": true,
+    "TransactionID": "nonneed",
+    "desc": "",
+    "remark": "None",
+    "create_time": "2023-02-03 16:22:52",
+    "update_time": "2023-02-03 16:22:33"
+  }
+},
+{
+  "model": "ctc_backend_manage.loginresult",
+  "pk": 1,
+  "fields": {
+    "name": "login",
+    "result": "success",
+    "desc": "",
+    "remark": null,
+    "create_time": "2021-07-01 14:51:32",
+    "update_time": "2021-07-01 14:51:32"
+  }
+},
+{
+  "model": "ctc_backend_manage.groupmanagement",
+  "pk": 1,
+  "fields": {
+    "group_name": "\u524d\u7f6e",
+    "desc": "\u524d\u7f6e\u7528\u4f8b\u4fe1\u606f",
+    "owner": "alter",
+    "create_time": "2021-09-10 10:05:02",
+    "update_time": "2021-09-10 10:05:02"
+  }
+},
+{
+  "model": "ctc_backend_manage.groupmanagement",
+  "pk": 2,
+  "fields": {
+    "group_name": "DSP_\u540e\u7aef\u7ba1\u7406_\u8d26\u53f7\u4e0e\u7ba1\u7406",
+    "desc": "DSP_\u540e\u7aef\u7ba1\u7406_\u8d26\u53f7\u4e0e\u7ba1\u7406",
+    "owner": "kaihua",
+    "create_time": "2023-01-11 14:14:11",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.groupmanagement",
+  "pk": 3,
+  "fields": {
+    "group_name": "\u4f7f\u7528\u767e\u5ea6\u641c\u7d22\u5185\u5bb9",
+    "desc": null,
+    "owner": "admin",
+    "create_time": "2023-02-03 16:14:20",
+    "update_time": "2023-02-03 15:44:14"
+  }
+},
+{
+  "model": "ctc_backend_manage.envmanagement",
+  "pk": 3,
+  "fields": {
+    "Env_name": "general",
+    "desc": "DSP\u901a\u7528\u7528\u4f8b",
+    "owner": "hejunjie",
+    "host": "DSP\u901a\u7528\u7528\u4f8b",
+    "create_time": "2021-12-27 07:38:16",
+    "update_time": "2021-12-27 07:22:01"
+  }
+},
+{
+  "model": "ctc_backend_manage.envmanagement",
+  "pk": 4,
+  "fields": {
+    "Env_name": "DSP\u6f14\u793a\u73af\u5883",
+    "desc": "DSP\u6f14\u793a\u73af\u5883",
+    "owner": "kaihua",
+    "host": "10.29.12.224:38967",
+    "create_time": "2023-01-11 13:41:52",
+    "update_time": "2023-01-11 09:27:03"
+  }
+},
+{
+  "model": "ctc_backend_manage.envmanagement",
+  "pk": 5,
+  "fields": {
+    "Env_name": "\u767e\u5ea6",
+    "desc": "\u767e\u5ea6",
+    "owner": "admin",
+    "host": "www.baidu.com",
+    "create_time": "2023-02-03 16:10:15",
+    "update_time": "2023-02-03 15:44:14"
+  }
+}
+]
